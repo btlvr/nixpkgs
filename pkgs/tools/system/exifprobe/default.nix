@@ -11,4 +11,12 @@ stdenv.mkDerivation rec {
     rev = "ce1ea2bc3dbbe8092b26f41cd89831cafe633d69";
     sha256 = "1c1fhc0v1m452lgnfcijnvrc0by06qfbhn3zkliqi60kv8l2isbp";
   };
+
+  meta = with stdenv.lib; {
+    description = "A tool to probe Exif and other digital camera RAW files";
+    homepage = "https://github.com/hfiguiere/exifprobe";
+    license = licenses.bsd3;
+    platforms = platforms.linux;
+  }
+
 }
